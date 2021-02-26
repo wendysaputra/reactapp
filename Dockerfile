@@ -1,4 +1,4 @@
-FROM node:14
+FROM node:alpine
  
 WORKDIR /usr/src/app
  
@@ -12,3 +12,5 @@ COPY . .
 EXPOSE 8083
  
 CMD [ "npm", "start" ]
+
+#docker build -t reactapp:2.0 .
